@@ -17,21 +17,15 @@ function App() {
   };
 
   const incrementGoodRate = () => {
-    setGood(prevRate => {
-      return prevRate + 1;
-    });
+    setGood(prevGood => ++prevGood);
   };
 
   const incrementNeutralRate = () => {
-    setNeutral(prevRate => {
-      return prevRate + 1;
-    });
+    setNeutral(prevNeutral => ++prevNeutral);
   };
 
   const incrementBadRate = () => {
-    setBad(prevRate => {
-      return prevRate + 1;
-    });
+    setBad(prevBad => ++prevBad);
   };
 
   const leaveFeedback = option => {
