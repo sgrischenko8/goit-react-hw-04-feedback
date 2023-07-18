@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Section } from './Section';
+import { Section } from './Section/Section';
+import styles from './App.module.css';
 
 function App() {
   const [good, setGood] = useState(0);
@@ -49,16 +50,7 @@ function App() {
   };
 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div className={styles.app}>
       <Section
         title=""
         good={good}
